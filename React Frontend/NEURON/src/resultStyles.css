@@ -1,0 +1,248 @@
+resultpage * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+.resultpage {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0c0e26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #4CAF50;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* MRI Results Section */
+.resultpage .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Increased gap for more space */
+    margin-bottom: 30px; /* Increased bottom margin */
+    flex-wrap: wrap; /* Ensures proper spacing on smaller screens */
+    
+}
+
+.resultpage .box {
+    background: white;
+    padding: 20px; /* Slightly increased padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px; /* Slightly increased width */
+    text-align: center;
+    margin: 15px; /* Added margin to ensure spacing */
+    
+}
+
+.resultpage .box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.classification-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.xai-heading {
+    margin: 30px 0;
+}
+
+/* Download Section */
+.download-section {
+    text-align: center;
+    background-color: #0c0e26;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.download-btn {
+    background-color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 40px 80px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 120px; /* Increased spacing */
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+}
+
+.resultpage .footer-section2 {
+    margin-top: 43px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section2 ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section2 ul li a:hover {
+    opacity: 1;
+}
+
+/* Adjust for responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
