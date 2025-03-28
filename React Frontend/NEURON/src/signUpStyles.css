@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+signuppage * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signuppage {
+    font-family: 'Inter', sans-serif;
+    background-color: #0c0e26;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.signuppage .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    height: 80vh; /* Decreased height slightly to lift the box up */
+    margin-bottom: 40px; /* Pushes everything up */
+}
+
+.signuppage .left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-logo {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-box {
+    background: white;
+    color: black;
+    padding: 30px; /* Increased padding */
+    border-radius: 12px;
+    width: 550px; /* Increased width */
+    text-align: center;
+    position: relative;
+    top: 10px; /* Moves the box down slightly */
+    margin-right: 20px; /* Adds space from the right */
+    height: 470px;
+}
+
+
+.signup-box h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.signuppage .input-group {
+    position: relative;
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+.signuppage input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.signuppage .password {
+    display: flex;
+    align-items: center;
+    width: 523px;
+}
+
+.signuppage .eye-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+}
+
+.signup-btn {
+    background: linear-gradient(to right, #771B83, #7E5E79, #2A7D96);
+    border: none;
+    color: white;
+    padding: 14px;
+    width: 30%;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+    opacity: 0.9;
+}
+
+.signin-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signuppage .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .left-side {
+        margin-bottom: 30px;
+    }
+    .logo {
+        font-size: 60px;
+    }
+    .signup-box {
+        width: 90%;
+        padding: 30px;
+        top: -10px; /* Moves the box up slightly */
+    }
+}
