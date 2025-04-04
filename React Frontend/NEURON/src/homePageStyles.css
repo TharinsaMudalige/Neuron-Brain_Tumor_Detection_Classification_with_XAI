@@ -1,0 +1,329 @@
+/* General Styles */
+.homepage {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0c0e26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #4CAF50;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.homepage h1 {
+    text-align: center;
+    color: #056AA9;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+.homepage h3 {
+    color: #083A67;
+}
+
+.homepage h4 {
+    font-size: 1.1rem;
+}
+
+/* Info Sections */
+.homepage .info-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.homepage .info-box {
+    background: #D9D6F2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 94%;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 25px;  
+    transition: transform 0.2s ease;  
+}
+
+.homepage p {
+    font-size: 21px;
+}
+
+.homepage .info-box:hover {
+    transform: translateY(-10px);
+}
+
+.homepage button {
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    transition: background 0.3s ease , transform 0.2s ease
+}
+
+.homepage .consult-btn2 {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.homepage .scan-btn {
+    margin-bottom: 2px;
+}
+
+.homepage button:hover {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    transition: left 0.3s ease-in-out;
+    transform: scale(1.05);
+    
+}
+
+/* Grid Layout */
+.homepage .grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding: 20px;
+    
+}
+
+.homepage .box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.homepage .img1 {
+    width: 380px;
+    height: 290px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: -200px;
+      
+}
+
+.homepage .box img{
+    transition: transform 0.2s ease;
+}
+
+.homepage .box img:hover {
+    transform: translateY(-10px);
+}
+
+.homepage .img2 {
+    width: 380px;
+    height: 250px;
+    border-radius: 10px; 
+    margin-top: 75px; 
+    margin-left: -200px;
+    
+    
+}
+
+.homepage .light-blue {
+    background: #B8CEDE;
+    width: 500px;
+    height: 300px;
+    transition: transform 0.2s ease;
+}
+
+.homepage .light-blue li{
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.homepage .light-gray {
+    background: #B8CEDE;
+    width: 500px;
+    transition: transform 0.2s ease;
+}
+
+.homepage .light-gray li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.homepage .light-blue:hover {
+    transform: translateY(-10px);
+}
+
+.homepage .light-gray:hover {
+    transform: translateY(-10px);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 40px 80px;    
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 120px; /* Increased spacing */
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.homepage .footer-section2 {
+    margin-top: 48px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section2 ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;    
+}
+
+.footer-section2 {
+    margin-top: 50px;
+}
+
+.footer-section2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section2 ul li a:hover {
+    opacity: 1;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+}
+
+.nav-links li a.active {
+    color: #4CAF50; /* Green color for the active page */
+    font-weight: bold; /* Make the text bold */
+    border-bottom: 3px solid #4CAF50; /* Add a green underline */
+    transition: all 0.3s ease-in-out;
+}

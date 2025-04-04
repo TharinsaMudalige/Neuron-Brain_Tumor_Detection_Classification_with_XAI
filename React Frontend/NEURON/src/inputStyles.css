@@ -1,0 +1,340 @@
+.inputpage {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0c0e26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #4CAF50;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Upload Section */
+.upload-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.upload-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Blue Box */
+.upload-box {
+    background: #2E2C6A;
+    padding: 50px;
+    border-radius: 20px;
+    width: 60%;
+    height: 450px; /* Increased height */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White Box */
+.white-box {
+    background: #EFEFEF;
+    padding: 30px;
+    border-radius: 15px;
+    width: 85%;
+    height: 85%; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Content inside White Box */
+.upload-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Drag and Drop Frame */
+.drag-drop {
+    background: white;
+    border: 2px dashed #aaa;
+    padding: 40px;
+    border-radius: 10px;
+    width: 45%;
+    height: 190px;
+    text-align: center;
+    margin-left: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+
+.drag-drop p {
+    display: block;
+    margin-bottom: 5px; /* Adds spacing between elements */
+}
+
+/* Hide Text When Image is Uploaded */
+#drag-text, .browse-btn {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Image Preview */
+#preview-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the whole image is visible */
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+/* Image Preview */
+.drag-drop img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Browse Button */
+.browse-btn {
+    background: linear-gradient(to right, #005B8F, #073E59);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.browse-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease
+}
+
+.browse-btn:hover {
+    background-color: #1E4C6E;
+    transform: scale(1.05);
+}
+
+
+
+/* Upload & Clear Buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+}
+
+.upload-btn, .clear-btn {
+    background: linear-gradient(to right, #005B8F, #073E59);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* Button Hover Effect */
+.inputpage button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.inputpage button:hover {
+    background-color: #1E4C6E; /* Darker blue shade on hover */
+    transform: scale(1.05); /* Slightly enlarges button */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 40px 80px;    
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 120px; /* Increased spacing */
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inputpage .footer-section2 {
+    margin-top: 40px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section2 ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section2 ul li a:hover {
+    opacity: 1;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+}
+
+/* Disabled Button Styles */
+button:disabled {
+    background: #868282;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Button Hover Effect */
+button:hover:enabled {
+    background-color: #1E4C6E;
+    transform: scale(1.05);
+}
+
+.nav-links li a.active {
+    color: #4CAF50; /* Green color for the active page */
+    font-weight: bold; /* Make the text bold */
+    border-bottom: 3px solid #4CAF50; /* Add a green underline */
+    transition: all 0.3s ease-in-out;
+}
+/* Loading text */
+.loading-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff9800;
+    font-weight: bold;
+}

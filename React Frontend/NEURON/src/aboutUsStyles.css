@@ -1,0 +1,225 @@
+.aboutuspage {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0c0e26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #4CAF50;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.aboutuspage h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #003165;
+}
+
+.aboutuspage main {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.aboutuspage .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.aboutuspage .card {
+    background: #B8CEDE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.aboutuspage .card:hover {
+    transform: translateY(-10px);
+}
+
+.aboutuspage .card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.aboutuspage .card h2 {
+    color: #000000;
+    font-size: 18px;
+}
+
+.aboutuspage .card p {
+    font-style: italic;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 40px 80px;    
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 120px; /* Increased spacing */
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutuspage .footer-section2 {
+    margin-top: 42px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section2 ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section2 ul {
+    list-style: none;
+    padding: 0;    
+}
+
+.footer-section2 {
+    margin-top: 50px;
+}
+
+.footer-section2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section2 ul li a:hover {
+    opacity: 1;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+}
+
+.nav-links li a.active {
+    color: #4CAF50; /* Green color for the active page */
+    font-weight: bold; /* Make the text bold */
+    border-bottom: 3px solid #4CAF50; /* Add a green underline */
+    transition: all 0.3s ease-in-out;
+}
