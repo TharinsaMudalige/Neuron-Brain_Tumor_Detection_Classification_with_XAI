@@ -1,6 +1,6 @@
-🧠 Brain Tumor Identification and Classification with Explainable AI 
+🧠 **Brain Tumor Identification and Classification with Explainable AI** 
 
-📌 Project Overview 
+📌 **Project Overview** 
 
 This project is a deep learning-based brain tumor detection and classification web application that uses MRI images for tumor segmentation, identification and classification.  
 The system provides explainable AI using LIME, SHAP, and Grad-CAM techniques to help users understand the model's predictions. This project aims to assist medical professionals
@@ -9,7 +9,7 @@ get the segmentation (if there is a tumour present), classification and XAI resu
 on how to use the system are included in the 'help' page. Furthermore, users can provide feedback on the system after using it, which gets saved in our database to help make
 necessary improvements. 
 
-🛠️ Features 
+🛠️ **Features** 
 
 1. Upload MRI scans for tumor segmentation, detection, and classification.
 2. Uses a hybrid model (CNN + ViT) for tumor detection and classification.
@@ -20,12 +20,14 @@ necessary improvements.
    - Grad-CAM (Gradient-weighted Class Activation Mapping) 
 
 4. Download a report containing all the results.
+   
 
 ![image alt](https://github.com/TharinsaMudalige/Neuron-Brain_Tumor_Detection_Classification_with_XAI/blob/2865a356620a37df6cba8d3084aaa5ee371e3408/Readme_images/img_1.png)
 
+
 ![image alt](https://github.com/TharinsaMudalige/Neuron-Brain_Tumor_Detection_Classification_with_XAI/blob/2865a356620a37df6cba8d3084aaa5ee371e3408/Readme_images/img_2.jpg)
 
-🏗️ Project Architecture 
+🏗️ **Project Architecture** 
 
 1. User logs in or registers 
 2. Uploads an MRI image 
@@ -36,7 +38,7 @@ necessary improvements.
 7. Result + report download 
 8. Optional feedback submission 
 
-📊 Technologies Used 
+📊 **Technologies Used** 
 
 - Frontend: React, HTML, CSS, JavaScript
 - Backend: Flask (Python) 
@@ -45,14 +47,14 @@ necessary improvements.
 - Database: Workbench 
 - Others: OpenCV, NumPy, Matplotlib, scikit-learn, pandas 
 
-🧪 Model Details 
+🧪 **Model Details** 
 
 - CNN layers used: [Conv2D → MaxPooling → Flatten → Dense] 
 - ViT implementation: [Patch creation → Linear Projection → Transformer Encoder → Classification Head] 
 - Segmentation model (U-Net)
 - Evaluation metrics: Accuracy, Precision, Recall, F1-score 
 
-🧑‍💻 How to Run the Project Locally 
+🧑‍💻 **How to Run the Project Locally** 
 
 1. Clone the repository 
 2. Create a virtual environment and activate it 
@@ -72,7 +74,7 @@ necessary improvements.
 5. Start the database: node server.cjs
 6. Start the web application: npm run dev 
 
-📁 Directory Structure 
+📁 **Directory Structure** 
 
 ├── Detection_Classification_CNN/ 
 ├── Detection_Claasification_ViT/ 
@@ -81,14 +83,14 @@ necessary improvements.
 ├── React Frontend/ NEURON/ 
 ├── README.md 
 
-🗃️ Dataset Information 
+🗃️ **Dataset Information** 
 
 - Dataset: https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation , https://www.kaggle.com/datasets/fernando2rad/brain-tumor-mri-images-44c ,
   https://www.kaggle.com/datasets/tombackert/brain-tumor-mri-data
 - Modalities: T1, T2, T1CE, FLAIR 
 - Preprocessing: Normalization, resizing, Augmentation  
 
-👩‍⚕️ Target Users 
+👩‍⚕️ **Target Users** 
 
 - Radiologists
 - Radiographers
@@ -96,7 +98,7 @@ necessary improvements.
 - Medical Researchers
 - Medical Students 
 
-📦 Future Improvements 
+📦 **Future Improvements** 
 
 - Future developments can be focused on improving model accuracy, training the model with a relatively larger dataset, architecture optimisation and performing hyperparameter tuning.
 The accuracy of determining and classifying the diagnosis could be enhanced by increasing the system to analyse more imaging modalities such as CT and PET scan images. Cloud based
@@ -105,7 +107,7 @@ deployment will enhance the faster real-time predictions, also the computational
 - The system’s usability can be improved by adding multilingual support to the system and by enhancing UI/UX improvements. Real-world deployment will benefit by adding clinical decision
 support tools to the system.  
 
-📬 Contact 
+📬 **Contact** 
 
 Venuki Mudalige 
 📧 Email: venuki.20232784@iit.ac.lk  
