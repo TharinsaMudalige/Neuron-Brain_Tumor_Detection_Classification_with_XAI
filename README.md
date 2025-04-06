@@ -90,7 +90,7 @@ necessary improvements.
 
 🗃️ **Dataset Information** 
 
-- Dataset: https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation , https://www.kaggle.com/datasets/fernando2rad/brain-tumor-mri-images-44c ,
+- Datasets: https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation , https://www.kaggle.com/datasets/fernando2rad/brain-tumor-mri-images-44c ,
   https://www.kaggle.com/datasets/tombackert/brain-tumor-mri-data
 - Modalities: T1, T2, T1CE, FLAIR 
 - Preprocessing: Normalization, resizing, Augmentation  
@@ -115,15 +115,19 @@ support tools to the system.
 📬 **Contact** 
 
 Venuki Mudalige 
+
 📧 Email: venuki.20232784@iit.ac.lk  
 
 Thisarani Jayaweera 
+
 📧 Email: thisarani.20232802@iit.ac.lk  
 
 Vimesh Herath 
+
 📧 Email: vimesh.20233171@iit.ac.lk   
 
 Sadeesh de Silva
+
 📧 Email: nammuni.20232513@iit.ac.lk 
 
  
