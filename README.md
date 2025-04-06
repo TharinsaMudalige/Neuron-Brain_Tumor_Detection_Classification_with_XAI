@@ -77,10 +77,15 @@ necessary improvements.
 📁 **Directory Structure** 
 
 ├── Detection_Classification_CNN/ 
+
 ├── Detection_Claasification_ViT/
+
 ├── Explainable AI/ 
+
 ├── Image preprocessing/
+
 ├── React Frontend/ NEURON/ 
+
 ├── README.md 
 
 🗃️ **Dataset Information** 
