@@ -115,19 +115,15 @@ support tools to the system.
 📬 **Contact** 
 
 Venuki Mudalige 
-
 📧 Email: venuki.20232784@iit.ac.lk  
 
 Thisarani Jayaweera 
-
 📧 Email: thisarani.20232802@iit.ac.lk  
 
 Vimesh Herath 
-
 📧 Email: vimesh.20233171@iit.ac.lk   
 
 Sadeesh de Silva
-
 📧 Email: nammuni.20232513@iit.ac.lk 
 
  
