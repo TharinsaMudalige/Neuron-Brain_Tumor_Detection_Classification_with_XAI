@@ -11,15 +11,19 @@ necessary improvements.
 
 🛠️ Features 
 
-Upload MRI scans for tumor segmentation, detection, and classification.
-Uses a hybrid model (CNN + ViT) for tumor detection and classification.
-Provides explainability using: 
+1. Upload MRI scans for tumor segmentation, detection, and classification.
+2. Uses a hybrid model (CNN + ViT) for tumor detection and classification.
+3. Provides explainability using: 
 
    - LIME (Local Interpretable Model-agnostic Explanations)
    - SHAP (SHapley Additive exPlanations) 
    - Grad-CAM (Gradient-weighted Class Activation Mapping) 
 
-Download a report containing all the results.  
+4. Download a report containing all the results.
+
+![image alt](https://github.com/TharinsaMudalige/Neuron-Brain_Tumor_Detection_Classification_with_XAI/blob/2865a356620a37df6cba8d3084aaa5ee371e3408/Readme_images/img_1.png)
+
+![image alt](https://github.com/TharinsaMudalige/Neuron-Brain_Tumor_Detection_Classification_with_XAI/blob/2865a356620a37df6cba8d3084aaa5ee371e3408/Readme_images/img_2.jpg)
 
 🏗️ Project Architecture 
 
@@ -34,12 +38,12 @@ Download a report containing all the results.
 
 📊 Technologies Used 
 
-Frontend: React, HTML, CSS, JavaScript
-Backend: Flask (Python) 
-Modeling: TensorFlow, Keras, Pytorch
-XAI: SHAP, LIME, Grad-CAM 
-Database: Workbench 
-Others: OpenCV, NumPy, Matplotlib, scikit-learn, pandas 
+- Frontend: React, HTML, CSS, JavaScript
+- Backend: Flask (Python) 
+- Modeling: TensorFlow, Keras, Pytorch
+- XAI: SHAP, LIME, Grad-CAM 
+- Database: Workbench 
+- Others: OpenCV, NumPy, Matplotlib, scikit-learn, pandas 
 
 🧪 Model Details 
 
@@ -54,15 +58,15 @@ Others: OpenCV, NumPy, Matplotlib, scikit-learn, pandas
 2. Create a virtual environment and activate it 
 3. Install necessary dependencies:  
 
-TensorFlow - 2.18.0 
-Keras - 3.8.0 
-Numpy - 1.26.4
-Sklearn - 1.6.1
-Pandas - 2.2.2
-Matplotlib - 3.10.0
-Seaborn - 0.13.2 
-Python - 3.11.11
-React with Vite - 22.11.0 
+- TensorFlow - 2.18.0 
+- Keras - 3.8.0 
+- Numpy - 1.26.4
+- Sklearn - 1.6.1
+- Pandas - 2.2.2
+- Matplotlib - 3.10.0
+- Seaborn - 0.13.2 
+- Python - 3.11.11
+- React with Vite - 22.11.0 
  
 4. Start the server: python app.py
 5. Start the database: node server.cjs
@@ -86,19 +90,19 @@ React with Vite - 22.11.0
 
 👩‍⚕️ Target Users 
 
-Radiologists
-Radiographers
-Neurologists 
-Medical Researchers
-Medical Students 
+- Radiologists
+- Radiographers
+- Neurologists 
+- Medical Researchers
+- Medical Students 
 
 📦 Future Improvements 
 
-Future developments can be focused on improving model accuracy, training the model with a relatively larger dataset, architecture optimisation and performing hyperparameter tuning.
+- Future developments can be focused on improving model accuracy, training the model with a relatively larger dataset, architecture optimisation and performing hyperparameter tuning.
 The accuracy of determining and classifying the diagnosis could be enhanced by increasing the system to analyse more imaging modalities such as CT and PET scan images. Cloud based
 deployment will enhance the faster real-time predictions, also the computational efficiency can also be maximised.  
 
-The system’s usability can be improved by adding multilingual support to the system and by enhancing UI/UX improvements. Real-world deployment will benefit by adding clinical decision
+- The system’s usability can be improved by adding multilingual support to the system and by enhancing UI/UX improvements. Real-world deployment will benefit by adding clinical decision
 support tools to the system.  
 
 📬 Contact 
